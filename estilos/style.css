@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("imagens/background.gif");
+    background-size: cover;
+}
+
 /* ============= MENU ============= */
 
 .menu {
@@ -51,14 +56,15 @@
     text-align: center;
     font-family: var(--SansSerif);
     font-size: 3em;
+    color: white;
 }
 
 /* ======= ABOUT =========== */
 
 .About {
-    background-color: rgba(0, 0, 0, 0.863);
-    width: 70vw;
-    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 80vw;
+    height: 40vh;
     margin: auto;
     border-radius: 5px;
     border: 1px solid rgb(129, 0, 0);
@@ -72,6 +78,39 @@
 }
 
 .About p {
+    color: white;
+    width: 25vw;
+}
+
+/* ======= FEATURES =========== */
+
+.features {
+    margin-top: 50px;
+}
+
+.features h1 {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+.features div {
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 80vw;
+    height: 25vh;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid rgb(129, 0, 0);
+    padding: 20px;
+}
+
+.features div h2 {
+    color: white;
+    font-family: var(--SansSerif);
+    font-size: 2em;
+}
+
+.features div p {
     color: white;
     width: 25vw;
 }
