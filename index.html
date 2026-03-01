@@ -17,39 +17,57 @@
     <header class="home">
         <h1>Anomaly Concepts<br>Portal</h1>
     </header>
-    <section class="About">
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In facere tempore, vel voluptatibus repudiandae labore similique quod. Iure id, doloribus fugit dolor placeat culpa incidunt rem aperiam sequi dolores repudiandae.</p>
+    <section class="About fade">
+        <div class="content">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In facere tempore, vel voluptatibus repudiandae labore similique quod. Iure id, doloribus fugit dolor placeat culpa incidunt rem aperiam sequi dolores repudiandae.</p>
+        </div>
+        <img src="estilos/imagens/cena1.jpg" alt="">
     </section>
-    <section class="features">
+    <section class="features fade">
         <h1>Features</h1>
-        <div class="DialogueBased">
+        <div class="DialogueBased fade">
             <h2>Dialogue-Based</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et provident at, nostrum tempora cumque eos perspiciatis nam debitis</p>
         </div>
-        <div class="LivreMovimentacao">
+        <div class="LivreMovimentacao fade">
             <h2>Free Movement</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit maiores aut, sunt illum repellendus dicta rem commodi</p>
         </div>
-        <div class="QTE">
+        <div class="QTE fade">
             <h2>Quick Time Event</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet molestiae eius, ipsam fuga odio perferendis a obcaecati enim quasi</p>
         </div>
-        <div class="RecursosExcassos">
+        <div class="RecursosExcassos fade">
             <h2>Scarce Resources</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, dicta culpa eligendi</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et provident at, nostrum tempora cumque eos perspiciatis nam debitisi</p>
         </div>
-        <div class="CompreArmas">
+        <div class="CompreArmas fade">
             <h2>Buy and Upagrade Weapons</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in, ad aperiam corporis</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim et provident at, nostrum tempora cumque eos perspiciatis nam debitis</p>
         </div>
     </section>
-    <section class="story">
+    <section class="story fade">
         <h2>sStory</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam itaque aspernatur officia expedita error! Harum magni quasi officiis ad laborum, culpa totam adipisci facere illo odit recusandae eius maxime!</p>
     </section>
     <footer>
 
     </footer>
+    <script>
+        const elements = document.querySelectorAll('.fade');
+
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            }
+        });
+        }, {
+        threshold: 0.2
+        });
+
+        elements.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

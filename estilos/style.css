@@ -15,6 +15,18 @@ body {
     background-size: cover;
 }
 
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.6s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* ============= MENU ============= */
 
 .menu {
@@ -25,6 +37,7 @@ body {
     background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5));
     align-items: center;
     padding: 10px;
+    z-index: 999;
 }
 
 .menu h1 {
@@ -48,7 +61,7 @@ body {
 
 .home {
     display: grid;
-    height: 70vh;
+    height: 100vh;
     align-items: center;
 }
 
@@ -62,24 +75,55 @@ body {
 /* ======= ABOUT =========== */
 
 .About {
-    background-color: rgba(0, 0, 0, 0.705);
-    width: 80vw;
-    height: 40vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 85vw;
+    height: 70vh;
     margin: auto;
     border-radius: 5px;
     border: 1px solid rgb(129, 0, 0);
-    padding: 20px;
+    overflow: hidden;
 }
 
-.About h1 {
+.content {
+    padding: 40px;
+    z-index: 2;
+}
+
+.content h1 {
     color: white;
-    font-family: var(--SansSerif);
     font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.About p {
+.content p {
+    grid-column: 1;
     color: white;
-    width: 25vw;
+    line-height: 30px;
+    font-family: var(--SansSerif);
+}
+
+.About img {
+    object-position: top left;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    -webkit-mask-image: linear-gradient(to right, transparent, black 50%);
+    mask-image: linear-gradient(to right, transparent, black 50%);
+}
+
+.About::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 
 /* ======= FEATURES =========== */
@@ -95,22 +139,28 @@ body {
 }
 
 .features div {
+    display: grid;
     background-color: rgba(0, 0, 0, 0.705);
     width: 80vw;
-    height: 25vh;
+    height: 35vh;
     margin: auto;
+    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid rgb(129, 0, 0);
-    padding: 20px;
+    padding: 30px;
+    justify-items: end;
 }
 
 .features div h2 {
     color: white;
     font-family: var(--SansSerif);
     font-size: 2em;
+    text-align: right;
 }
 
 .features div p {
     color: white;
     width: 25vw;
+    text-align: right;
+    line-height: 30px;
 }
