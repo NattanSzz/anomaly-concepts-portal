@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.About {
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+
+.About img {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 50%);
+    mask-image: linear-gradient(to bottom, transparent, black 60%);
+}
+
+
+
+.features div {
+    width: 95vw;
+    height: 50vh;
+}
+
+.features div h2 {
+    font-size: 1.5em;
+}
+
+.features div p {
+    font-size: 0.8em;
+    width: 50%;
+}
+
+
+.story {
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 10% 45%;
+    padding: 15px;
+}
+
+.story h1 {
+    font-size: 2em;
+}
+
+.story p {
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.story img {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
