@@ -6,6 +6,14 @@
     grid-template-rows: 50% 50%;
 }
 
+.About h1 {
+    font-size: 1.5em;
+}
+
+.About p {
+    font-size: 1em;
+}
+
 .About img {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
@@ -21,11 +29,11 @@
 }
 
 .features div h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .features div p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     width: 50%;
 }
 
