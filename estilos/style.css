@@ -140,6 +140,7 @@ body {
 
 .features div {
     display: grid;
+    grid-template-rows: 25% 75%;
     background-color: rgba(0, 0, 0, 0.705);
     width: 80vw;
     height: 40vh;
@@ -149,6 +150,7 @@ body {
     border: 1px solid rgb(129, 0, 0);
     padding: 30px;
     justify-items: end;
+    align-items: start;
 }
 
 .features div h2 {
@@ -160,7 +162,7 @@ body {
 
 .features div p {
     color: white;
-    width: 25vw;
+    width: 50%;
     text-align: right;
     line-height: 30px;
     font-family: var(--SansSerif);
@@ -172,17 +174,20 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 0.5fr 2fr;
+    align-items: center;
 
     background-color: rgba(0, 0, 0, 0.8);
     width: 100vw;
-    height: 90vh;
+    height: 110vh;
     margin-top: 100px;
-    padding: 100px;
+    padding: 50px 100px 50px 100px;
 }
 
 .story h1 {
     color: white;
     font-size: 3em;
+    text-align: center;
+    grid-column: 1 / -1;
 }
 
 .story p {
@@ -190,11 +195,12 @@ body {
     font-size: 1.5em;
     font-family: var(--SansSerif);
     grid-column: 1 / 2;
+    line-height: 1.5em;
 }
 
 .story img {
     grid-column: 2 / -1;
-    grid-row: 1 / -1;
+    grid-row: 2 / -1;
     width: 100%;
     height: 100%;
     object-fit: cover;
