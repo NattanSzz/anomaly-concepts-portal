@@ -268,4 +268,5 @@ body {
 .criadores div p {
     color: white;
     width: 50%;
+    font-family: var(--SansSerif);
 }
