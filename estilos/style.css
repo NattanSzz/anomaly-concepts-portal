@@ -14,6 +14,7 @@ body {
     background-image: url("imagens/background.gif");
     background-size: cover;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .fade {
@@ -227,4 +228,44 @@ body {
 
     -webkit-mask-composite: intersect;
     mask-composite: intersect;
+}
+
+
+/* ======== CREATORS ============ */
+
+.criadores {
+    margin-top: 100px;
+}
+
+.criadores h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.criadores div {
+    display: grid;
+    grid-template-rows: 25% 75%;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 80vw;
+    height: 40vh;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(129, 0, 0);
+    padding: 30px;
+}
+
+.kevin {
+    justify-items: end;
+    text-align: right;
+}
+
+.criadores div h2 {
+    color: white;
+}
+
+.criadores div p {
+    color: white;
+    width: 50%;
 }
