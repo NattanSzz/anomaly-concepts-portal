@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+.home {
+    background-image: url("imagens/banner-mobile.jpg");
+    background-position: center;
+}
+
 .About {
     height: 100vh;
     grid-template-columns: 100%;
