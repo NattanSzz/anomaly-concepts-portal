@@ -246,13 +246,17 @@ body {
 .criadores div {
     display: grid;
     grid-template-rows: 25% 75%;
-    background-color: rgba(0, 0, 0, 0.705);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     width: 80vw;
     height: 40vh;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 5px;
-    border: 1px solid rgb(129, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
 }
 
