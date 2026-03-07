@@ -69,3 +69,25 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
 }
+
+
+.criadores div {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 20% 30%;
+    justify-items: center;
+    width: 95vw;
+    height: 60vh;
+}
+
+.criadores div h2 {
+    font-size: 1.5em;
+    text-align: center;
+    grid-row: 2 / 3;
+}
+
+.criadores div p {
+    font-size: 0.7em;
+    text-align: center;
+    width: 100%;
+    grid-row: 3 / -1;
+}
