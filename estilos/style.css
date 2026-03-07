@@ -13,6 +13,7 @@
 body {
     background-image: url("imagens/background.gif");
     background-size: cover;
+    width: 100vw;
 }
 
 .fade {
@@ -63,6 +64,12 @@ body {
     display: grid;
     height: 100vh;
     align-items: center;
+    background-image: url("imagens/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to top, transparent, black 50%);
+    mask-image: linear-gradient(to top, transparent, black 50%);
+}
 }
 
 .home h1, .home h2 {
