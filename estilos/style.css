@@ -70,7 +70,6 @@ body {
     -webkit-mask-image: linear-gradient(to top, transparent, black 50%);
     mask-image: linear-gradient(to top, transparent, black 50%);
 }
-}
 
 .home h1, .home h2 {
     text-align: center;
