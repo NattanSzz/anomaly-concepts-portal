@@ -6,9 +6,10 @@
 }
 
 .About {
-    height: 100vh;
+    width: 95vw;
+    min-height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto 50%;
 }
 
 .About h1 {
@@ -30,20 +31,21 @@
 
 .features div {
     grid-template-columns: 100%;
-    grid-template-rows: 50% 20% 30%;
+    grid-template-rows: 50% auto auto;
     justify-items: center;
     width: 95vw;
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .features div h2 {
     font-size: 1.2em;
     text-align: center;
+    align-self: center;
     grid-row: 2 / 3;
 }
 
 .features div p {
-    font-size: 0.7em;
+    font-size: 100%;
     text-align: center;
     width: 100%;
     grid-row: 3 / -1;
@@ -52,8 +54,8 @@
 
 .story {
     grid-template-columns: 100%;
-    grid-template-rows: 47% 8% 45%;
-    padding: 15px;
+    grid-template-rows: 40% auto auto;
+    padding: 25px;
 }
 
 .story h1 {
@@ -62,9 +64,10 @@
 }
 
 .story p {
-    font-size: 1em;
+    font-size: 100%;
     line-height: 30px;
     grid-row: 3 / -1;
+    place-self: stretch;
 }
 
 .story img {
@@ -74,21 +77,32 @@
 
 .criadores div {
     grid-template-columns: 100%;
-    grid-template-rows: 50% 20% 30%;
+    grid-template-rows: 50% auto auto;
     justify-items: center;
     width: 95vw;
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .criadores div h2 {
     font-size: 1.5em;
     text-align: center;
     grid-row: 2 / 3;
+    align-self: center;
 }
 
 .criadores div p {
-    font-size: 0.7em;
+    font-size: 0.8em;
+    line-height: 1.5em;
     text-align: center;
     width: 100%;
     grid-row: 3 / -1;
+    grid-column: 1 / -1;
+}
+
+.criadores img {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
 }
