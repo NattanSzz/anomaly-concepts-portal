@@ -10,11 +10,16 @@
 <body>
     <nav class="menu">
         <h1>NattanSzz</h1>
-        <a href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#Features">Features</a>
-        <a href="#Story">Story</a>
-        <a href="#Creators">Creators</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="menu-links" id="menu-links">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Features">Features</a>
+            <a href="#Story">Story</a>
+            <a href="#Creators">Creators</a>
+        </div>
     </nav>
     <header id="Home" class="home">
         
@@ -97,6 +102,9 @@
         });
 
         elements.forEach(el => observer.observe(el));
+        function toggleMenu() {
+            document.getElementById("menu-links").classList.toggle("active");
+        }
     </script>
 </body>
 </html>

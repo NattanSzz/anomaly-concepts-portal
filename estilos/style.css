@@ -35,7 +35,7 @@ body {
     position: fixed;
     width: 100%;
     display: grid;
-    grid-template-columns: 70% repeat(5, 1fr);
+    grid-template-columns: 50% auto;
     background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5));
     align-items: center;
     padding: 10px;
@@ -49,14 +49,25 @@ body {
     text-shadow: 1px 1px 3px black;
 }
 
+.menu-links {
+    display: flex;
+    justify-content: space-around;
+}
+
 .menu a {
-    text-align: center;
     color: white;
     text-decoration: none;
 }
 
 .menu a:hover {
     color: rgba(255, 255, 255, 0.733);
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 /* ======== HEADER ========== */
