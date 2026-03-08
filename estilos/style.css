@@ -13,7 +13,7 @@
 body {
     background-image: url("imagens/background.gif");
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -35,7 +35,7 @@ body {
     position: fixed;
     width: 100%;
     display: grid;
-    grid-template-columns: 70% repeat(4, 1fr);
+    grid-template-columns: 70% repeat(5, 1fr);
     background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.5));
     align-items: center;
     padding: 10px;
