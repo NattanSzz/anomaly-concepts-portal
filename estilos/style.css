@@ -187,11 +187,14 @@ body {
     grid-column: 1 / -1;
     color: white;
     width: 60%;
+    min-height: 0;
     text-align: right;
     line-height: 30px;
     font-family: var(--SansSerif);
     padding: 30px;
     z-index: 999;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .features div img {
