@@ -36,9 +36,9 @@
 
 .About {
     width: 95vw;
-    min-height: 100vh;
+    min-height: 90vh;
     grid-template-columns: 100%;
-    grid-template-rows: auto 50%;
+    grid-template-rows: auto auto;
 }
 
 .About h1 {
@@ -91,8 +91,8 @@
 
 
 .story {
-    grid-template-columns: 100%;
-    grid-template-rows: 40% auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     padding: 25px;
 }
 
@@ -102,7 +102,7 @@
 }
 
 .story p {
-    font-size: 100%;
+    font-size: 1em;
     line-height: 30px;
     grid-row: 3 / -1;
     place-self: stretch;
