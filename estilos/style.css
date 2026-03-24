@@ -181,7 +181,7 @@ body {
 
 .features div h2 {
     grid-row: 1 / 2;
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
     color: white;
     font-family: var(--SansSerif);
     font-size: 2em;
@@ -233,19 +233,19 @@ body {
 
 .story h1 {
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     grid-column: 1 / -1;
 }
 
 .story p {
-    width: 70%;
+    width: 60%;
     color: white;
     font-size: 1.2em;
     font-family: var(--SansSerif);
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    line-height: 1.5em;
+    line-height: 2em;
     z-index: 999;
 }
 
