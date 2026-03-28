@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 850px)">
 </head>
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
     <nav class="menu">
         <div class="hamburger" onclick="toggleMenu()">
             ☰
@@ -109,6 +112,10 @@
         function toggleMenu() {
             document.getElementById("menu-links").classList.toggle("active");
         }
+
+        window.addEventListener("load", function () {
+            document.getElementById("loader").style.display = "none";
+        });
     </script>
 </body>
 </html>
