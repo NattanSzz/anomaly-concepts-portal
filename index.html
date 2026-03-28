@@ -95,27 +95,8 @@
     <footer>
 
     </footer>
-    <script>
-        const elements = document.querySelectorAll('.fade');
-
-        const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            }
-        });
-        }, {
-        threshold: 0.2
-        });
-
-        elements.forEach(el => observer.observe(el));
-        function toggleMenu() {
-            document.getElementById("menu-links").classList.toggle("active");
-        }
-
-        window.addEventListener("load", function () {
-            document.getElementById("loader").style.display = "none";
-        });
+    <script src="script.js">
+        
     </script>
 </body>
 </html>
